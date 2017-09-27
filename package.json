@@ -1,0 +1,25 @@
+{
+  "name": "idiom",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node --harmony ./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha",
+    "start": "NODE_ENV=production pm2 start index.js --node-args='--harmony' --name 'myblog'"
+  },
+  "author": "gyber",
+  "license": "ISC",
+  "dependencies": {
+    "config-lite": "^2.1.0",
+    "ejs": "^2.5.7",
+    "express": "^4.14.0",
+    "express-formidable": "^1.0.0"
+  },
+  "devDependencies": {
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-node": "^5.1.1",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1"
+  }
+}
